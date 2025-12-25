@@ -15,7 +15,7 @@
   - name: system start and enabled
     ansible.builtin.service:
      name: mongod
-     state: started
+     state: start
      enabled: yes
 
   - name: edit the configuration File
