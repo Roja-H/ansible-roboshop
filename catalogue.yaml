@@ -67,8 +67,8 @@
      state: present
 
   - name: checking products loaded or not if catalogue db exits or not
-     ansible.builtin.command: mongosh --host mongodb.daws84s.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
-     register: catalogue_output
+    ansible.builtin.command: mongosh --host mongodb.daws84s.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
+    register: catalogue_output
 
   - name: print catalogue_output
     ansible.builtin.debug:
