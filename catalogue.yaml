@@ -22,7 +22,7 @@
     ansible.builtin.user:
      name: roboshop
      system: yes
-     create_home: /app
+     home: /app
      shell: /sbin/nologin
 
   - name: downloading catalogue code
